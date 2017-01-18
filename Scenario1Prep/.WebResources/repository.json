@@ -1,0 +1,16 @@
+{
+    "records": [{
+        "name": "TIBCO Cloud",
+        "items": [{
+            "localTimestamp": 1484753115000,
+            "localURI": "/Scenario1Prep/Service Descriptors/Scenario1_1.0.json",
+            "disabled": false,
+            "remoteTimestamp": 1484769946000,
+            "localHash": "94b5b186a34fbbd11cdc4d14a399a50a4d6885b0",
+            "remoteId": "34",
+            "remoteHash": "94b5b186a34fbbd11cdc4d14a399a50a4d6885b0"
+        }],
+        "url": "https://integration.cloud.tibco.com:443"
+    }],
+    "resources": []
+}

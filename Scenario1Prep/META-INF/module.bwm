@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_T95H8N2SEeaZza_xQt0w2A" targetNamespace="http://tns.tibco.com/bw/composite/Scenario1Prep" name="Scenario1Prep" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_YsoH8N2SEeaZza_xQt0w2A" name="Bank-Add" promote="ComponentProcess/Bank-Add">
+    <sca:interface.wsdl xmi:id="_Ysu1oN2SEeaZza_xQt0w2A" interface="http://xmlns.example.com/20170118102516PLT#wsdl.interface(Bank-Add)" scaext:wsdlLocation="../Processes/scenario1prep/Process.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_Ys2xcN2SEeaZza_xQt0w2A" name="RestService" path="/Bank/Add" docBasePath="http://localhost:7777/Scenario1Prep" docResourcePath="Bank" basePath="/" connector="scenario1prep.Process" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/Scenario1_1.0.json">
+      <operation xmi:id="_Ys6b0N2SEeaZza_xQt0w2A" operationName="get" httpMethod="GET" responseStyle="element">
+        <parameters xmi:id="_YuIj0d2SEeaZza_xQt0w2A">
+          <parameterMapping xmi:id="_YuJK4N2SEeaZza_xQt0w2A" parameterName="param1" parameterType="Query" dataType="integer#int32" required="true" description=""/>
+          <parameterMapping xmi:id="_YuJK4d2SEeaZza_xQt0w2A" parameterName="param2" parameterType="Query" dataType="integer#int32" required="true" description=""/>
+        </parameters>
+        <clientFormat>json</clientFormat>
+      </operation>
+      <parameters xmi:id="_YuIj0N2SEeaZza_xQt0w2A"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_Ys6b0d2SEeaZza_xQt0w2A" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_UhpVQN2SEeaZza_xQt0w2A" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_Uh3XsN2SEeaZza_xQt0w2A" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_Uh83QN2SEeaZza_xQt0w2A" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_UiCW0N2SEeaZza_xQt0w2A" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_UiH2YN2SEeaZza_xQt0w2A" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_UiMu4N2SEeaZza_xQt0w2A" name="BW.CLOUD.PORT" type="XMLSchema:int" scalable="true"/>
+  <sca:property xmi:id="_UiSOcN2SEeaZza_xQt0w2A" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_UQ0D8N2SEeaZza_xQt0w2A" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_UQ1SEN2SEeaZza_xQt0w2A" processName="scenario1prep.Process"/>
+    <sca:service xmi:id="_Ysj2gN2SEeaZza_xQt0w2A" name="Bank-Add">
+      <sca:interface.wsdl xmi:id="_YslEoN2SEeaZza_xQt0w2A" interface="http://xmlns.example.com/20170118102516PLT#wsdl.interface(Bank-Add)" scaext:wsdlLocation="../Processes/scenario1prep/Process.bwp"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

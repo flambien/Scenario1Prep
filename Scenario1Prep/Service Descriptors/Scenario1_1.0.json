@@ -1,0 +1,43 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0",
+    "title": "Scenario1",
+    "x-lastModified": "Jan 18, 2017 07:05AM PST"
+  },
+  "paths": {
+    "/Bank/Add": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response",
+            "schema": {
+              "type": "string"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "param1",
+            "in": "query",
+            "description": "",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "param2",
+            "in": "query",
+            "description": "",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ]
+      }
+    }
+  }
+}
